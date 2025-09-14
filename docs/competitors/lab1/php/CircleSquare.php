@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 define('INPUT_MESSAGE', "Введите радиус круга: ");
 define('RESULT_MESSAGE', "Площадь вашего круга равна: %s\n");
