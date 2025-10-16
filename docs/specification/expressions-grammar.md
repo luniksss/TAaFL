@@ -76,11 +76,20 @@ integer = digit, { digit } ;
 real = digit, { digit }, ".", digit, { digit } ;
 string = '"', { anyChar - '"' | escapeSequence }, '"' ;
 anyChar = ? любой символ Unicode ? ;
-escapeSequence = "\\", ( "\"" | "\\" | "n" | "t" ) ;
+escapeSequence = "\", ( """ | "\" | "n" | "t" ) ;
 boolean = "кринж" | "!кринж" ;
 constant = "пи" | "эклер" ;
 identifier = ( letter | "_" ), { letter | digit | "_" } ;
-functionCall = "лапка", identifier, "(", [ expression, { ",", expression } ], ")" ;
+functionCall = "лапка", identifier, "(", [ parameter, { ",", parameter } ], ")", "{", { statement }, "}" ;
+parameter = type, identifier ;
+type = "цыфорка" | "рилцыфорка" | "нитка" | "кринж" | "!кринж" ;
+statement = assignment | expressionStatement | returnStatement | ifStatement | whileStatement;
+assignment = variable, " царапнуть ", expression, "мяу" ;
+expressionStatement = expression, "мяу" ;
+returnStatement = "вернуть", expression, "мяу" ;
+ifStatement = "триппитроппа", "(", expression, ")", "{", { statement }, "}", [ elseStatement ] ;
+elseStatement = "троппатриппа", "{", { statement }, "}" ;
+whileStatement = "магасияй", "(", expression, ")", "{", { statement }, "}" ;
 ```  
 Основные конструкции  
 ```
