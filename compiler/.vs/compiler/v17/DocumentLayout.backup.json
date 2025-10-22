@@ -1,0 +1,226 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\source\\compiler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E45EACA-B811-400F-978F-7419AC8658D5}|tests\\ExampleLib.UnitTests\\ExampleLib.UnitTests.csproj|d:\\source\\compiler\\tests\\examplelib.unittests\\textutiltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E45EACA-B811-400F-978F-7419AC8658D5}|tests\\ExampleLib.UnitTests\\ExampleLib.UnitTests.csproj|solutionrelative:tests\\examplelib.unittests\\textutiltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E45EACA-B811-400F-978F-7419AC8658D5}|tests\\ExampleLib.UnitTests\\ExampleLib.UnitTests.csproj|d:\\source\\compiler\\tests\\examplelib.unittests\\fileutiltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E45EACA-B811-400F-978F-7419AC8658D5}|tests\\ExampleLib.UnitTests\\ExampleLib.UnitTests.csproj|solutionrelative:tests\\examplelib.unittests\\fileutiltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3DB6112-0E76-495B-BE71-5186112A4296}|src\\ExampleLib\\ExampleLib.csproj|d:\\source\\compiler\\src\\examplelib\\textutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3DB6112-0E76-495B-BE71-5186112A4296}|src\\ExampleLib\\ExampleLib.csproj|solutionrelative:src\\examplelib\\textutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3DB6112-0E76-495B-BE71-5186112A4296}|src\\ExampleLib\\ExampleLib.csproj|d:\\source\\compiler\\src\\examplelib\\fileutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3DB6112-0E76-495B-BE71-5186112A4296}|src\\ExampleLib\\ExampleLib.csproj|solutionrelative:src\\examplelib\\fileutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 32,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TextUtilTest.cs",
+              "DocumentMoniker": "D:\\source\\compiler\\tests\\ExampleLib.UnitTests\\TextUtilTest.cs",
+              "RelativeDocumentMoniker": "tests\\ExampleLib.UnitTests\\TextUtilTest.cs",
+              "ToolTip": "D:\\source\\compiler\\tests\\ExampleLib.UnitTests\\TextUtilTest.cs*",
+              "RelativeToolTip": "tests\\ExampleLib.UnitTests\\TextUtilTest.cs*",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwGcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:07:33.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileUtilTests.cs",
+              "DocumentMoniker": "D:\\source\\compiler\\tests\\ExampleLib.UnitTests\\FileUtilTests.cs",
+              "RelativeDocumentMoniker": "tests\\ExampleLib.UnitTests\\FileUtilTests.cs",
+              "ToolTip": "D:\\source\\compiler\\tests\\ExampleLib.UnitTests\\FileUtilTests.cs",
+              "RelativeToolTip": "tests\\ExampleLib.UnitTests\\FileUtilTests.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwEUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:24:05.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileUtil.cs",
+              "DocumentMoniker": "D:\\source\\compiler\\src\\ExampleLib\\FileUtil.cs",
+              "RelativeDocumentMoniker": "src\\ExampleLib\\FileUtil.cs",
+              "ToolTip": "D:\\source\\compiler\\src\\ExampleLib\\FileUtil.cs",
+              "RelativeToolTip": "src\\ExampleLib\\FileUtil.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:08:27.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TextUtil.cs",
+              "DocumentMoniker": "D:\\source\\compiler\\src\\ExampleLib\\TextUtil.cs",
+              "RelativeDocumentMoniker": "src\\ExampleLib\\TextUtil.cs",
+              "ToolTip": "D:\\source\\compiler\\src\\ExampleLib\\TextUtil.cs",
+              "RelativeToolTip": "src\\ExampleLib\\TextUtil.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAYwK0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:08:37.851Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
