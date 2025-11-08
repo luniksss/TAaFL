@@ -99,8 +99,8 @@ logicalOr = logicalAnd, { "||", logicalAnd } ;
 logicalAnd = comparison, { "&&", comparison } ;
 comparison = additive, [ ( ">" | ">=" | "<" | "<=" | "==" | "!=" ), additive ] ;
 additive = multiplicative, { ( "+" | "-" ), multiplicative } ;
-multiplicative = power, { ( "*" | "/" | "%" ), power } ;
-power = unary, [ "^", power ] ;
-unary = [ "+" | "-" ], primary ;
+multiplicative = unary, { ( "*" | "/" | "%" ), unary } ;
+unary = [ "+" | "-" ], power ;
+power = primary, [ "^", power ] ;
 primary = literal | constant | boolean | identifier | "(", expression, ")" | functionCall ;
 ```
