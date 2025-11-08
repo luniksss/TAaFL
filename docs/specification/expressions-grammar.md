@@ -80,17 +80,9 @@ anyChar = ? любой символ Unicode ? ;
 escapeSequence = "\", ( """ | "\" | "n" | "t" ) ;
 boolean = "кринж" | "!кринж" ;
 constant = "пи" | "эклер" ;
+
 identifier = ( letter | "_" ), { letter | digit | "_" } ;
-functionCall = "лапка", identifier, "(", [ parameter, { ",", parameter } ], ")", ":", type, "{", { statement }, "}"
-parameter = type, identifier ;
 type = "цыфорка" | "рилцыфорка" | "нитка" | "кринжли";
-statement = assignment | expressionStatement | returnStatement | ifStatement | whileStatement;
-assignment = variable, " царапнуть ", expression, "мяу" ;
-expressionStatement = expression, "мяу" ;
-returnStatement = "вернуть", expression, "мяу" ;
-ifStatement = "триппитроппа", "(", expression, ")", "{", { statement }, "}", [ elseStatement ] ;
-elseStatement = "троппатриппа", "{", { statement }, "}" ;
-whileStatement = "магасияй", "(", expression, ")", "{", { statement }, "}" ;
 ```  
 Основные конструкции  
 ```
