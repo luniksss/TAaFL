@@ -65,7 +65,7 @@
 // Структура программы
 program = { valueDeclaration | functionDeclaration }, mainFunction, { valueDeclaration | functionDeclaration };
 mainFunction = "лапка помощи", "(", ")", block;
-functionDeclaration = "лапка", identifier, "(", [ parameterList ], ")", ":", type, block;
+functionDeclaration = "лапка", identifier, "(", [ parameterList ], ")", [":", type], block;
 functionCall = "лапка", identifier, "(", [ argument_list ], ")", instructionDelimiter;
 
 argument_list = identifier, { ",", identifier };
