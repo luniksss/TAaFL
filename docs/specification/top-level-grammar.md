@@ -93,7 +93,7 @@ statement = variableDecl |
 
 assignment = identifier, "царапнуть", expression, instructionDelimiter;
 inputStatement = "клацать", "(", identifier, ")", instructionDelimiter;
-outputStatement = "мурлыкать", expression, instructionDelimiter;
+outputStatement = "мурлыкать", expression, { ",", expression }, instructionDelimiter;
 ifStatement = "триппитроппа", "(", expression, ")", block, [ elseStatement ];
 elseStatement = "троппатриппа", "{", { statement }, "}" ;
 whileStatement = "магасияй", "(", expression, ")", block;
