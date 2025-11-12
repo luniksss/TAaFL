@@ -3,7 +3,7 @@
 Выражения могут содержать:
 - литералы чисел(целые(`цыфорка`) и вещественные(`рилцыфорка`))
 - литералы строк(`нитка`)
-- логические литералы(`кринж, !кринж`)
+- логические литералы(`кринж, некринж`)
 - арифметические операторы (бинарные)
 - операторы сравнения
 - логические операторы
@@ -41,8 +41,8 @@
 ## Приоритет операторов
 | Приоритет (по убыванию) | Операторы     |
 | ----------------------- | ------------- |
-| 1                       | `+`, `-` (унарные)   |
-| 2                       | `^`           |
+| 1                       | `^` |
+| 2                       |`+`, `-` (унарные)|
 | 3                       | `*`, `/`, `%` |
 | 4                       | `+`, `-`      |
 | 5                       | `>`, `>=`, `<`, `<=` |
@@ -61,12 +61,13 @@
 ```
 digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 
-letter = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" 
-       | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" 
-       | "u" | "v" | "w" | "x" | "y" | "z" 
-       | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" 
-       | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" 
-       | "U" | "V" | "W" | "X" | "Y" | "Z" ;
+letter = "а" | "б" | "в" | "г" | "д" | "е" | "ё" | "ж" | "з" | "и" 
+       | "й" | "к" | "л" | "м" | "н" | "о" | "п" | "р" | "с" | "т" 
+       | "у" | "ф" | "х" | "ц" | "ч" | "ш" | "щ" | "ъ" | "ы" | "ь"
+       | "э" | "ю" | "я" | "А" | "Б" | "В" | "Г" | "Д" | "Е" | "Ё"
+       | "Ж" | "З" | "И" | "Й" | "К" | "Л" | "М" | "Н" | "О" | "П"
+       | "Р" | "С" | "Т" | "У" | "Ф" | "Х" | "Ц" | "Ч" | "Ш" | "Щ"
+       | "Э" | "Ю" | "Я";
 ```  
 Литералы и базовые элементы  
 ```
@@ -77,19 +78,11 @@ real = digit, { digit }, ".", digit, { digit } ;
 string = '"', { anyChar - '"' | escapeSequence }, '"' ;
 anyChar = ? любой символ Unicode ? ;
 escapeSequence = "\", ( """ | "\" | "n" | "t" ) ;
-boolean = "кринж" | "!кринж" ;
+boolean = "кринж" | "некринж" ;
 constant = "пи" | "эклер" ;
+
 identifier = ( letter | "_" ), { letter | digit | "_" } ;
-functionCall = "лапка", identifier, "(", [ parameter, { ",", parameter } ], ")", ":", type, "{", { statement }, "}"
-parameter = type, identifier ;
 type = "цыфорка" | "рилцыфорка" | "нитка" | "кринжли";
-statement = assignment | expressionStatement | returnStatement | ifStatement | whileStatement;
-assignment = variable, " царапнуть ", expression, "мяу" ;
-expressionStatement = expression, "мяу" ;
-returnStatement = "вернуть", expression, "мяу" ;
-ifStatement = "триппитроппа", "(", expression, ")", "{", { statement }, "}", [ elseStatement ] ;
-elseStatement = "троппатриппа", "{", { statement }, "}" ;
-whileStatement = "магасияй", "(", expression, ")", "{", { statement }, "}" ;
 ```  
 Основные конструкции  
 ```
@@ -98,8 +91,8 @@ logicalOr = logicalAnd, { "||", logicalAnd } ;
 logicalAnd = comparison, { "&&", comparison } ;
 comparison = additive, [ ( ">" | ">=" | "<" | "<=" | "==" | "!=" ), additive ] ;
 additive = multiplicative, { ( "+" | "-" ), multiplicative } ;
-multiplicative = power, { ( "*" | "/" | "%" ), power } ;
-power = unary, [ "^", power ] ;
-unary = [ "+" | "-" ], primary ;
+multiplicative = unary, { ( "*" | "/" | "%" ), unary } ;
+unary = [ "+" | "-" ], power ;
+power = primary, [ "^", power ] ;
 primary = literal | constant | boolean | identifier | "(", expression, ")" | functionCall ;
 ```
