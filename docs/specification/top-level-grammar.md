@@ -86,7 +86,7 @@ statement = variableDecl |
 
 assignment = identifier, "царапнуть", expression, instructionDelimiter;
 inputStatement = "клацать", "(", identifier, ")", instructionDelimiter;
-outputStatement = "мурлыкать", "(", identifier, ")", instructionDelimiter;
+outputStatement = "мурлыкать", "(", identifier, { ",", identifier }, ")", instructionDelimiter;
 ifStatement = "триппитроппа", "(", expression, ")", block, [ elseStatement ];
 elseStatement = "троппатриппа", "{", { statement }, "}" ;
 returnStatement = "вернуть", [ expression ], instructionDelimiter;
