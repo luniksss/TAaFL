@@ -72,25 +72,34 @@ variableDecl = "мур", type, identifier, [ "царапнуть", expression ];
 constantDecl = "строгиймур", type, identifier, "царапнуть", expression;
 
 // Виды инструкций
-statement = (variableDecl |
+statement = commonStatement, instructionDelimiter;
+
+commonStatement = (variableDecl |
     constantDecl |
     assignment |
     inputStatement |
     outputStatement |
     ifStatement |
     whileStatement |
+    doWhileStatement |
+    forStatement |
     returnStatement |
-    functionCall )
-    , instructionDelimiter;
-);
+    functionCall);
 
 assignment = identifier, "царапнуть", expression;
 inputStatement = "клацать", "(", identifier, ")";
 outputStatement = "мурлыкать", "(", expression, { ",", expression }, ")";
+
 ifStatement = "триппитроппа", "(", expression, ")", block, [ elseStatement ];
 elseStatement = "троппатриппа", "{", { statement }, "}" ;
-while = "магасияй", "(", expression, ")", block;
-returnStatement = "вернуть", [ expression ];
 
+whileStatement = whileCondition, block;
+doWhileStatement = "хотябыраз",  block, whileCondition;
+whileCondition = "магасияй", "(", expression, ")";
+forStatement = "хвостомкрутить", "(", assignment, instructionDelimiter, expression, instructionDelimiter, integer, ")", block;
+loopBlock = "{", { loopStatement }, "}";
+loopStatement = (commonStatement | "стоп"), instructionDelimiter;
+
+returnStatement = "вернуть", [ expression ];
 instructionDelimiter = "мяу";
 ```
