@@ -94,5 +94,9 @@ additive = multiplicative, { ( "+" | "-" ), multiplicative } ;
 multiplicative = unary, { ( "*" | "/" | "%" ), unary } ;
 unary = [ "+" | "-" ], power ;
 power = primary, [ "^", power ] ;
-primary = literal | constant | boolean | identifier | "(", expression, ")" | functionCall ;
+primary = literal | constant | boolean | identifierOrCall | "(", expression, ")";
+
+identifierOrCall = identifier, [ functionArgs ] ;
+functionArgs = "(", [ argumentList ], ")" ;
+argumentList = identifier, { ",", identifier };
 ```
