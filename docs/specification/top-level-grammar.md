@@ -60,19 +60,19 @@
 program = { functionDeclaration }, mainFunction, { functionDeclaration };
 mainFunction = "лапкапомощи", "(", ")", block;
 functionDeclaration = "лапка", identifier, "(", [ parameterList ], ")", [":", type], block;
-functionCall = identifier, "(", [ argument_list ], ")", instructionDelimiter;
+functionCall = identifier, "(", [ argumentList ], ")";
 
-argument_list = identifier, { ",", identifier };
+argumentList = identifier, { ",", identifier };
 parameterList = parameter, { ",", parameter };
 parameter = type, identifier;
 block = "{", { statement }, "}";
 
 // Переменные и константы
-variableDecl = "мур", type, identifier, [ "царапнуть", expression ], instructionDelimiter;
-constantDecl = "строгиймур", type, identifier, "царапнуть", expression, instructionDelimiter;
+variableDecl = "мур", type, identifier, [ "царапнуть", expression ];
+constantDecl = "строгиймур", type, identifier, "царапнуть", expression;
 
 // Виды инструкций
-statement = variableDecl |
+statement = (variableDecl |
     constantDecl |
     assignment |
     inputStatement |
@@ -80,16 +80,16 @@ statement = variableDecl |
     ifStatement |
     whileStatement |
     returnStatement |
-    functionCall |
-    block
+    functionCall )
+    , instructionDelimiter;
 );
 
-assignment = identifier, "царапнуть", expression, instructionDelimiter;
-inputStatement = "клацать", "(", identifier, ")", instructionDelimiter;
-outputStatement = "мурлыкать", "(", expression, { ",", expression }, ")", instructionDelimiter;
+assignment = identifier, "царапнуть", expression;
+inputStatement = "клацать", "(", identifier, ")";
+outputStatement = "мурлыкать", "(", expression, { ",", expression }, ")";
 ifStatement = "триппитроппа", "(", expression, ")", block, [ elseStatement ];
 elseStatement = "троппатриппа", "{", { statement }, "}" ;
-returnStatement = "вернуть", [ expression ], instructionDelimiter;
+returnStatement = "вернуть", [ expression ];
 
 instructionDelimiter = "мяу";
 ```
