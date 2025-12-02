@@ -89,6 +89,7 @@ inputStatement = "клацать", "(", identifier, ")";
 outputStatement = "мурлыкать", "(", expression, { ",", expression }, ")";
 ifStatement = "триппитроппа", "(", expression, ")", block, [ elseStatement ];
 elseStatement = "троппатриппа", "{", { statement }, "}" ;
+while = "магасияй", "(", expression, ")", block;
 returnStatement = "вернуть", [ expression ];
 
 instructionDelimiter = "мяу";
