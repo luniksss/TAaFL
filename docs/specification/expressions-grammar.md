@@ -2,7 +2,6 @@
 ## Синтаксис выражений
 Выражения могут содержать:
 - литералы чисел(целые(`цыфорка`) и вещественные(`рилцыфорка`))
-- литералы строк(`нитка`)
 - логические литералы(`кринж, некринж`)
 - арифметические операторы (бинарные)
 - операторы сравнения
@@ -73,18 +72,14 @@ letter = "а" | "б" | "в" | "г" | "д" | "е" | "ё" | "ж" | "з" | "и"
 ```  
 Литералы и базовые элементы  
 ```
-literal = number | string ;
 number = integer | real ;
 integer = digit, { digit } ;
 real = digit, { digit }, ".", digit, { digit } ;
-string = '"', { anyChar - '"' | escapeSequence }, '"' ;
-anyChar = ? любой символ Unicode ? ;
-escapeSequence = "\", ( """ | "\" | "n" | "t" ) ;
 boolean = "кринж" | "некринж" ;
 constant = "пи" | "эклер" ;
 
 identifier = ( letter | "_" ), { letter | digit | "_" } ;
-type = "цыфорка" | "рилцыфорка" | "нитка" | "кринжли";
+type = "цыфорка" | "рилцыфорка" | "кринжли";
 ```  
 Основные конструкции  
 ```
@@ -96,7 +91,7 @@ additive = multiplicative, { ( "+" | "-" ), multiplicative } ;
 multiplicative = unary, { ( "*" | "/" | "%" ), unary } ;
 unary = [ "!", unary | "+" | "-" ], power ;
 power = primary, [ "^", power ] ;
-primary = literal | constant | boolean | identifierOrCall | "(", expression, ")";
+primary = number | constant | boolean | identifierOrCall | "(", expression, ")";
 
 identifierOrCall = identifier, [ functionArgs ] ;
 functionArgs = "(", [ argumentList ], ")" ;
