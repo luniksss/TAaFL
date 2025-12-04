@@ -128,12 +128,12 @@ public enum TokenType
     NonStrictLess,
 
     /// <summary>
-    ///  Нестрогое меньше "<=".
+    ///  Проверка равенства "==".
     /// </summary>
     EqualSign,
 
     /// <summary>
-    ///  Возведение в степень "**".
+    ///  Возведение в степень "^".
     /// </summary>
     ExponentSign,
 
@@ -206,4 +206,29 @@ public enum TokenType
     ///  Ключевое слово "клацать" - пользовательский вывод.
     /// </summary>
     Comment,
+
+    /// <summary>
+    /// Константа Pi (пи).
+    /// </summary>
+    Pi,
+
+    /// <summary>
+    /// Константа Euler (эклер).
+    /// </summary>
+    Euler,
+
+    /// <summary>
+    /// Логическое И (&&).
+    /// </summary>
+    LogicalAnd,
+
+    /// <summary>
+    /// Логическое ИЛИ (||).
+    /// </summary>
+    LogicalOr,
+
+    /// <summary>
+    /// Логическое NOT (!).
+    /// </summary>
+    LogicalNot,
 }

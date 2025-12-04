@@ -61,6 +61,12 @@ public class Lexer
         {
             "клацать", TokenType.Output
         },
+        { 
+            "пи", TokenType.Pi
+        },
+        {
+            "эклер", TokenType.Euler
+        },
     };
 
     private readonly TextScanner _scanner;
@@ -85,7 +91,7 @@ public class Lexer
         }
 
         char ch = _scanner.Peek();
-        if (char.IsLetter(ch) || ch == '_' || (ch >= 0x0400 && ch <= 0x04FF))
+        if (char.IsLetter(ch) || ch == '_' || (ch >= 'А' && ch <= 'я') || ch == 'Ё' || ch == 'ё')
         {
             return ParseIdentifierOrKeyword();
         }
@@ -169,20 +175,58 @@ public class Lexer
     /// </summary>
     private Token ParseNumericLiteral()
     {
-        string stringNumericLiteral = "";
-        do
+        StringBuilder sb = new StringBuilder();
+
+        // optional unary minus
+        if (_scanner.Peek() == '-')
         {
-            stringNumericLiteral += _scanner.Peek();
+            sb.Append('-');
             _scanner.Advance();
         }
-        while (!char.IsWhiteSpace(_scanner.Peek()) && !_scanner.IsEnd());
 
-        if (double.TryParse(stringNumericLiteral, CultureInfo.InvariantCulture, out double numericLiteral))
+        // integer part
+        while (char.IsAsciiDigit(_scanner.Peek()))
         {
-            return new Token(TokenType.NumericLiteral, new TokenValue(numericLiteral));
+            sb.Append(_scanner.Peek());
+            _scanner.Advance();
         }
 
-        return new Token(TokenType.Error, new TokenValue(stringNumericLiteral));
+        // fractional part
+        if (_scanner.Peek() == '.')
+        {
+            sb.Append('.');
+            _scanner.Advance();
+
+            if (!char.IsAsciiDigit(_scanner.Peek()))
+            {
+                return new Token(TokenType.Error, new TokenValue(sb.ToString()));
+            }
+
+            while (char.IsAsciiDigit(_scanner.Peek()))
+            {
+                sb.Append(_scanner.Peek());
+                _scanner.Advance();
+            }
+        }
+
+        if (char.IsLetter(_scanner.Peek()))
+        {
+            while (!char.IsWhiteSpace(_scanner.Peek()) && !_scanner.IsEnd())
+            {
+                sb.Append(_scanner.Peek());
+                _scanner.Advance();
+            }
+
+            return new Token(TokenType.Error, new TokenValue(sb.ToString()));
+        }
+
+        // parse
+        if (double.TryParse(sb.ToString(), CultureInfo.InvariantCulture, out double result))
+        {
+            return new Token(TokenType.NumericLiteral, new TokenValue(result));
+        }
+
+        return new Token(TokenType.Error, new TokenValue(sb.ToString()));
     }
 
     /// <summary>
@@ -253,6 +297,9 @@ public class Lexer
 
                 _scanner.Advance();
                 return new Token(TokenType.MultiplySign, null);
+            case '^':
+                _scanner.Advance();
+                return new Token(TokenType.ExponentSign, null);
             case '/':
                 _scanner.Advance();
                 return new Token(TokenType.DivisionSign, null);
@@ -272,9 +319,28 @@ public class Lexer
 
                 _scanner.Advance();
                 return new Token(TokenType.Error, new TokenValue(ch + _scanner.Peek(1)));
+            case '&':
+                if (_scanner.Peek(1) == '&')
+                {
+                    _scanner.Advance();
+                    _scanner.Advance();
+                    return new Token(TokenType.LogicalAnd, null);
+                }
+
+                _scanner.Advance();
+                return new Token(TokenType.Error, new TokenValue("&"));
+            case '|':
+                if (_scanner.Peek(1) == '|')
+                {
+                    _scanner.Advance();
+                    _scanner.Advance();
+                    return new Token(TokenType.LogicalOr, null);
+                }
+
+                _scanner.Advance();
+                return new Token(TokenType.Error, new TokenValue("|"));
             default:
                 _scanner.Advance();
-                Console.WriteLine($"DEBUG ! ! ! ! ! ! {ch}");
                 return new Token(TokenType.Error, new TokenValue(ch));
         }
     }
@@ -309,7 +375,7 @@ public class Lexer
                 switch (nextChar)
                 {
                     case 'n':
-                        sbTotal.Append('\n'); 
+                        sbTotal.Append('\n');
                         break;
                     case 't':
                         sbTotal.Append('\t');

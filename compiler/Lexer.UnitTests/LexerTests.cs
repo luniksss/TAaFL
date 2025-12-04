@@ -41,7 +41,7 @@ public class LexerTests
         {
             {
                 "215", [
-                    new Token(TokenType.NumericLiteral, new TokenValue(215.0))
+                    new Token(TokenType.NumericLiteral, new TokenValue(215))
                 ]
             },
             {
@@ -197,6 +197,11 @@ public class LexerTests
                     new Token(TokenType.StringLiteral, new TokenValue("text \n \\ \"")),
                     ]
             },
+            {
+                "\"text \\t abc\"", [
+                    new Token(TokenType.StringLiteral, new TokenValue("text \t abc")),
+                    ]
+            },
         };
     }
 
@@ -220,11 +225,11 @@ public class LexerTests
         }
         ",
         @"keywords: 7
-        identifier: 11
+        identifier: 10
         number literals: 0
         string literals: 0
         operators: 21
-        other lexemes: 0
+        other lexemes: 1
         "
       },
       {

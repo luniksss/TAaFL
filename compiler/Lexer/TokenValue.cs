@@ -36,9 +36,9 @@ public class TokenValue
     {
         return _value switch
         {
+            string s => double.Parse(s),
             double d => d,
-            string s => double.Parse(s, CultureInfo.InvariantCulture),
-            _ => throw new NotImplementedException(),
+            _ => throw new NotImplementedException()
         };
     }
 
