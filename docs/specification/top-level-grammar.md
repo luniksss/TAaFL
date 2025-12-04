@@ -1,14 +1,22 @@
 # Грамматика программы на языке МЯУ#
 ## 1. Пример кода
 ```
-мур нитка цитата мяу
-клацать(цитата) мяу
+лапкапомощи()
+{
+  мур цыфорка число1 мяу
+  мур цыфорка число2 мяу
 
-окак реагируем на цитату пользователя
-триппитроппа (цитата == "на тебе рыбку") {
-  мурлыкать "вот это по-нашему!" мяу
-} троппатриппа {
-  мурлыкать "окак" мяу
+  клацать(число1) мяу
+  клацать(число2) мяу
+
+  мур цыфорка сумма мяу
+  сумма царапнуть сложитьЧиселки(число1, число2) мяу
+  мурлыкать(сумма) мяу
+}
+
+лапка сложитьЧиселки(цыфорка слагаемое1, цыфорка слагаемое2): цыфорка
+{
+  вернуть слагаемое1 + слагаемое2 мяу
 }
 ```
 ## 2. Ключевые особенности и семантические правила языка
@@ -35,16 +43,15 @@
 Ввод-вывод происходит с помощью инструкций с ключевыми словами:  
 - ввод - `клацать`, например
   ```
-  мур нитка цитата мяу
-  клацать(цитата) мяу
+  мур цыфорка вводноеЧисло мяу
+  клацать(вводноеЧисло) мяу
   ```  
 - вывод - `мурлыкать`, например
   ```
-  триппитроппа (цитата == "на тебе рыбку") {
-  мурлыкать "вот это по-нашему!" мяу
-  }
+  строгиймур рилцыфорка числоНаобум царапнуть 1.23 мяу
+  мурлыкать(числоНаобум) мяу
   ```
-Возможен лишь вывод переменной или константы с типом строка/число(целое или действительное)/булевое значение, конкретной строки/числа/булевого значения
+Возможен лишь вывод переменной или константы с типом число(целое или действительное)/булевое значение, конкретного числа/булевого значения
 
 ### 5. Виды инструкций
 **Не любое** выражение является инструкцией.  
@@ -60,36 +67,46 @@
 program = { functionDeclaration }, mainFunction, { functionDeclaration };
 mainFunction = "лапкапомощи", "(", ")", block;
 functionDeclaration = "лапка", identifier, "(", [ parameterList ], ")", [":", type], block;
-functionCall = identifier, "(", [ argument_list ], ")", instructionDelimiter;
+functionCall = identifier, "(", [ argumentList ], ")";
 
-argument_list = identifier, { ",", identifier };
+argumentList = identifier, { ",", identifier };
 parameterList = parameter, { ",", parameter };
 parameter = type, identifier;
 block = "{", { statement }, "}";
 
 // Переменные и константы
-variableDecl = "мур", type, identifier, [ "царапнуть", expression ], instructionDelimiter;
-constantDecl = "строгиймур", type, identifier, "царапнуть", expression, instructionDelimiter;
+variableDecl = "мур", type, identifier, [ "царапнуть", expression ];
+constantDecl = "строгиймур", type, identifier, "царапнуть", expression;
 
 // Виды инструкций
-statement = variableDecl |
+statement = commonStatement, instructionDelimiter;
+
+commonStatement = (variableDecl |
     constantDecl |
     assignment |
     inputStatement |
     outputStatement |
     ifStatement |
     whileStatement |
+    doWhileStatement |
+    forStatement |
     returnStatement |
-    functionCall |
-    block
-);
+    functionCall);
 
-assignment = identifier, "царапнуть", expression, instructionDelimiter;
-inputStatement = "клацать", "(", identifier, ")", instructionDelimiter;
-outputStatement = "мурлыкать", "(", expression, { ",", expression }, ")", instructionDelimiter;
+assignment = identifier, "царапнуть", expression;
+inputStatement = "клацать", "(", identifier, ")";
+outputStatement = "мурлыкать", "(", expression, { ",", expression }, ")";
+
 ifStatement = "триппитроппа", "(", expression, ")", block, [ elseStatement ];
 elseStatement = "троппатриппа", "{", { statement }, "}" ;
-returnStatement = "вернуть", [ expression ], instructionDelimiter;
 
+whileStatement = whileCondition, block;
+doWhileStatement = "хотябыраз",  block, whileCondition;
+whileCondition = "магасияй", "(", expression, ")";
+forStatement = "хвостомкрутить", "(", assignment, instructionDelimiter, expression, instructionDelimiter, integer, ")", block;
+loopBlock = "{", { loopStatement }, "}";
+loopStatement = (commonStatement | "стоп"), instructionDelimiter;
+
+returnStatement = "вернуть", [ expression ];
 instructionDelimiter = "мяу";
 ```
