@@ -26,6 +26,7 @@ public class ParserTests
     {
         Assert.Equal(1024, Parser.ExecuteExpr("(-2) ^ 10"));
         Assert.Equal(-1024, Parser.ExecuteExpr("-(2 ^ 10)"));
+        Assert.Equal(-1024, Parser.ExecuteExpr("-2 ^ 10"));
     }
 
 
