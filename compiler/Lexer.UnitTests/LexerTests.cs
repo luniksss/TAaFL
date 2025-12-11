@@ -61,13 +61,15 @@ public class LexerTests
             },
             {
                 "0512", [
-                    new Token(TokenType.NumericLiteral, new TokenValue(512)) 
+                    new Token(TokenType.NumericLiteral, new TokenValue(512))
                     ]
             },
             {
                 "-0.314 -2712", [
-                new Token(TokenType.NumericLiteral, new TokenValue(-0.314)),
-                new Token(TokenType.NumericLiteral, new TokenValue(-2712))
+                new Token(TokenType.MinusSign, null),
+                new Token(TokenType.NumericLiteral, new TokenValue(0.314)),
+                new Token(TokenType.MinusSign, null),
+                new Token(TokenType.NumericLiteral, new TokenValue(2712))
             ]
             },
         };
@@ -247,7 +249,7 @@ public class LexerTests
         identifier: 6
         number literals: 5
         string literals: 2
-        operators: 7
+        operators: 9
         other lexemes: 0
         "
       },

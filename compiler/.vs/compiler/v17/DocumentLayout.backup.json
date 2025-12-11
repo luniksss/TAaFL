@@ -1,65 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\",
+  "WorkspaceRootPath": "D:\\gitrepos\\TAaFL\\compiler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer\\lexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\lexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\parser.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|solutionrelative:parser.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\parser.unittests\\parsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\parser.unittests\\parsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|solutionrelative:parser.unittests\\parsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|solutionrelative:lexer.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\parser\\tokenstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\tokenstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\parser\\unexpectedlexemeexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\unexpectedlexemeexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer\\tokenvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\tokenvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer.unittests\\lexertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\lexer.unittests\\lexertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|solutionrelative:lexer.unittests\\lexertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer\\tokentype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|d:\\gitrepos\\taafl\\compiler\\parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|d:\\gitrepos\\taafl\\compiler\\lexer\\tokentype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\tokentype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|d:\\gitrepos\\taafl\\compiler\\lexer\\lexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\lexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|d:\\gitrepos\\taafl\\compiler\\lexer\\tokenvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\tokenvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\parser.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|solutionrelative:parser.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|d:\\gitrepos\\taafl\\compiler\\parser\\parser.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\parser.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|d:\\gitrepos\\taafl\\compiler\\parser\\tokenstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\tokenstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|d:\\gitrepos\\taafl\\compiler\\parser\\unexpectedlexemeexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\unexpectedlexemeexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\lexer.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|solutionrelative:lexer.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|d:\\gitrepos\\taafl\\compiler\\lexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer.unittests\\lexer.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\lexer.unittests\\lexer.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|solutionrelative:lexer.unittests\\lexer.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer\\textscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|d:\\gitrepos\\taafl\\compiler\\lexer\\textscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\textscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer\\lexicalstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|d:\\gitrepos\\taafl\\compiler\\lexer\\lexicalstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\lexicalstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|c:\\users\\wqrxysf\\source\\taafl\\compiler\\lexer\\lexicalreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|d:\\gitrepos\\taafl\\compiler\\lexer\\lexicalreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|solutionrelative:lexer\\lexicalreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -70,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 44,
+          "SelectedChildIndex": 35,
           "Children": [
             {
               "$type": "Bookmark",
@@ -206,37 +210,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TESTLISTS.md",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser.UnitTests\\TESTLISTS.md",
-              "RelativeDocumentMoniker": "Parser.UnitTests\\TESTLISTS.md",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser.UnitTests\\TESTLISTS.md",
-              "RelativeToolTip": "Parser.UnitTests\\TESTLISTS.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-26T17:22:25.15Z",
-              "EditorCaption": ""
+              "DocumentIndex": 7,
+              "Title": "Parser.csproj",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\Parser.csproj",
+              "RelativeDocumentMoniker": "Parser\\Parser.csproj",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\Parser.csproj",
+              "RelativeToolTip": "Parser\\Parser.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T09:52:08.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "TESTLISTS.md",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser.UnitTests\\TESTLISTS.md",
+              "RelativeDocumentMoniker": "Parser.UnitTests\\TESTLISTS.md",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser.UnitTests\\TESTLISTS.md",
+              "RelativeToolTip": "Parser.UnitTests\\TESTLISTS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-26T17:22:25.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ParserTests.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser.UnitTests\\ParserTests.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser.UnitTests\\ParserTests.cs",
               "RelativeDocumentMoniker": "Parser.UnitTests\\ParserTests.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser.UnitTests\\ParserTests.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser.UnitTests\\ParserTests.cs",
               "RelativeToolTip": "Parser.UnitTests\\ParserTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T16:41:41.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UnexpectedLexemeException.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser\\UnexpectedLexemeException.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\UnexpectedLexemeException.cs",
               "RelativeDocumentMoniker": "Parser\\UnexpectedLexemeException.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser\\UnexpectedLexemeException.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\UnexpectedLexemeException.cs",
               "RelativeToolTip": "Parser\\UnexpectedLexemeException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -244,35 +259,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "TokenStream.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser\\TokenStream.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\TokenStream.cs",
               "RelativeDocumentMoniker": "Parser\\TokenStream.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser\\TokenStream.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\TokenStream.cs",
               "RelativeToolTip": "Parser\\TokenStream.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAACZ2ZmZmYkwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T15:31:07.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "TokenValue.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\TokenValue.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TokenValue.cs",
               "RelativeDocumentMoniker": "Lexer\\TokenValue.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\TokenValue.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TokenValue.cs",
               "RelativeToolTip": "Lexer\\TokenValue.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAcwDEAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T15:31:04.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Token.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\Token.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Token.cs",
               "RelativeDocumentMoniker": "Lexer\\Token.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\Token.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Token.cs",
               "RelativeToolTip": "Lexer\\Token.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -280,11 +295,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TextScanner.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\TextScanner.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TextScanner.cs",
               "RelativeDocumentMoniker": "Lexer\\TextScanner.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\TextScanner.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TextScanner.cs",
               "RelativeToolTip": "Lexer\\TextScanner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -292,11 +307,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "LexicalStats.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\LexicalStats.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\LexicalStats.cs",
               "RelativeDocumentMoniker": "Lexer\\LexicalStats.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\LexicalStats.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\LexicalStats.cs",
               "RelativeToolTip": "Lexer\\LexicalStats.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -306,59 +321,59 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Parser.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser\\Parser.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\Parser.cs",
               "RelativeDocumentMoniker": "Parser\\Parser.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Parser\\Parser.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\Parser.cs",
               "RelativeToolTip": "Parser\\Parser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcBAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T15:29:39.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "TokenType.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\TokenType.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TokenType.cs",
               "RelativeDocumentMoniker": "Lexer\\TokenType.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\TokenType.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TokenType.cs",
               "RelativeToolTip": "Lexer\\TokenType.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAYwFIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAnwMgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T14:49:48.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "LexerTests.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer.UnitTests\\LexerTests.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\LexerTests.cs",
               "RelativeDocumentMoniker": "Lexer.UnitTests\\LexerTests.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer.UnitTests\\LexerTests.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\LexerTests.cs",
               "RelativeToolTip": "Lexer.UnitTests\\LexerTests.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwGUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwEoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T13:53:38.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Lexer.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\Lexer.cs",
-              "RelativeDocumentMoniker": "Lexer\\Lexer.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\Lexer.cs",
-              "RelativeToolTip": "Lexer\\Lexer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T20:37:08.543Z",
+              "WhenOpened": "2025-11-26T13:53:38.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Lexer.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Lexer.cs",
+              "RelativeDocumentMoniker": "Lexer\\Lexer.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Lexer.cs",
+              "RelativeToolTip": "Lexer\\Lexer.cs",
+              "ViewState": "AgIAAHcBAAAAAAAAAAAwwKcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:37:08.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "TESTLISTS.md",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer.UnitTests\\TESTLISTS.md",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\TESTLISTS.md",
               "RelativeDocumentMoniker": "Lexer.UnitTests\\TESTLISTS.md",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer.UnitTests\\TESTLISTS.md",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\TESTLISTS.md",
               "RelativeToolTip": "Lexer.UnitTests\\TESTLISTS.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
@@ -366,11 +381,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Lexer.UnitTests.csproj",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer.UnitTests\\Lexer.UnitTests.csproj",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\Lexer.UnitTests.csproj",
               "RelativeDocumentMoniker": "Lexer.UnitTests\\Lexer.UnitTests.csproj",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer.UnitTests\\Lexer.UnitTests.csproj",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\Lexer.UnitTests.csproj",
               "RelativeToolTip": "Lexer.UnitTests\\Lexer.UnitTests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -378,11 +393,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "LexicalReport.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\LexicalReport.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\LexicalReport.cs",
               "RelativeDocumentMoniker": "Lexer\\LexicalReport.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\TAaFL\\compiler\\Lexer\\LexicalReport.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\LexicalReport.cs",
               "RelativeToolTip": "Lexer\\LexicalReport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

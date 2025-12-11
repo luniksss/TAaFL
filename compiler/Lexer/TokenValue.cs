@@ -6,7 +6,7 @@ public class TokenValue
 {
     private readonly object _value;
 
-    public TokenValue (string value)
+    public TokenValue(string value)
     {
         _value = value;
     }

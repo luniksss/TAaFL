@@ -7,7 +7,7 @@ public static class LexicalStats
     private static readonly HashSet<TokenType> Keywords =
   [
     TokenType.Const, TokenType.Let, TokenType.String, TokenType.Int, TokenType.Bool, TokenType.Def,
-    TokenType.True, TokenType.False, TokenType.If, TokenType.Else,TokenType.While, TokenType.Return,
+    TokenType.True, TokenType.False, TokenType.If, TokenType.Else, TokenType.While, TokenType.Return,
     TokenType.Input, TokenType.Output, TokenType.Main, TokenType.Double,
   ];
 

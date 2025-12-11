@@ -44,9 +44,6 @@ public class Lexer
             "триппитроппа", TokenType.If
         },
         {
-            "троппатриппи", TokenType.Else
-        },
-        {
             "магасияй", TokenType.While
         },
         {
@@ -56,16 +53,31 @@ public class Lexer
             "мяу", TokenType.Semicolon
         },
         {
-            "мурлыкать", TokenType.Input
+            "мурлыкать", TokenType.Output
         },
         {
-            "клацать", TokenType.Output
+            "клацать", TokenType.Input
         },
-        { 
+        {
             "пи", TokenType.Pi
         },
         {
             "эклер", TokenType.Euler
+        },
+        {
+            "ничего", TokenType.Void
+        },
+        {
+            "хотябыраз", TokenType.DoWhile
+        },
+        {
+            "хвостомкрутить", TokenType.For
+        },
+        {
+            "стоп", TokenType.Break
+        },
+        {
+            "троппатриппа", TokenType.Else
         },
     };
 
@@ -96,7 +108,7 @@ public class Lexer
             return ParseIdentifierOrKeyword();
         }
 
-        if (char.IsAsciiDigit(ch) || (ch == '-' && char.IsAsciiDigit(_scanner.Peek(1))))
+        if (char.IsAsciiDigit(ch))
         {
             return ParseNumericLiteral();
         }
@@ -130,6 +142,7 @@ public class Lexer
         {
             _scanner.Advance();
         }
+
         return new Token(TokenType.Comment, null);
     }
 
@@ -168,21 +181,15 @@ public class Lexer
 
     /// <summary>
     /// Проверяет литерал числа по правилам:
-    ///     number = ["-"], digits_sequence, [ ".", digits_sequence ] ;
+    ///     number = digits_sequence, [ ".", digits_sequence ] ;
     ///     digits_sequence = digit { digit } ;
     ///     digit = "0" | "1" | ... | "9" ;
     /// Все числа представляются как 64-битные числа с плавающей точкой (double).
+    /// Унарный минус обрабатывается парсером как отдельный токен.
     /// </summary>
     private Token ParseNumericLiteral()
     {
         StringBuilder sb = new StringBuilder();
-
-        // optional unary minus
-        if (_scanner.Peek() == '-')
-        {
-            sb.Append('-');
-            _scanner.Advance();
-        }
 
         // integer part
         while (char.IsAsciiDigit(_scanner.Peek()))
@@ -318,7 +325,7 @@ public class Lexer
                 }
 
                 _scanner.Advance();
-                return new Token(TokenType.Error, new TokenValue(ch + _scanner.Peek(1)));
+                return new Token(TokenType.LogicalNot, null);
             case '&':
                 if (_scanner.Peek(1) == '&')
                 {
@@ -339,6 +346,9 @@ public class Lexer
 
                 _scanner.Advance();
                 return new Token(TokenType.Error, new TokenValue("|"));
+            case ':':
+                _scanner.Advance();
+                return new Token(TokenType.Colon, null);
             default:
                 _scanner.Advance();
                 return new Token(TokenType.Error, new TokenValue(ch));
