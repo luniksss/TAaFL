@@ -1,11 +1,10 @@
-using Execution;
+п»їusing Execution;
 using Lexer;
 
 namespace Parser;
 
 /// <summary>
-/// Выполняет синтаксический разбор программы на языке МЯУ#.
-/// Грамматика программы описана в top-level-grammar.
+/// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РїСЂРѕРіСЂР°РјРјС‹ РЅР° СЏР·С‹РєРµ РњРЇРЈ#. /// Р“СЂР°РјРјР°С‚РёРєР° РїСЂРѕРіСЂР°РјРјС‹ РѕРїРёСЃР°РЅР° РІ top-level-grammar.
 /// </summary>
 public class Parser(Context context, IEnvironment environment, string code)
 {
@@ -20,7 +19,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Выполняет парсинг выражения.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ.
     /// </summary>
     public static double ExecuteExpr(string expr)
     {
@@ -31,7 +30,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Выполняет парсинг программы.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РїСЂРѕРіСЂР°РјРјС‹.
     /// </summary>
     public static void ParseProgram(string code)
     {
@@ -42,7 +41,15 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг программы.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ РїСЂРѕРіСЂР°РјРјСѓ СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј РїРµСЂРµРґР°РЅРЅС‹С… РєРѕРЅС‚РµРєСЃС‚Р° Рё РѕРєСЂСѓР¶РµРЅРёСЏ.
+    /// </summary>
+    public void ExecuteProgram()
+    {
+        ParseProgram();
+    }
+
+    /// <summary>
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РїСЂРѕРіСЂР°РјРјС‹.
     /// program = { functionDeclaration }, mainFunction, { functionDeclaration }.
     /// </summary>
     private void ParseProgram()
@@ -65,8 +72,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг главной функции.
-    /// mainFunction = "лапкапомощи", "(", ")", block.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РіР»Р°РІРЅРѕР№ С„СѓРЅРєС†РёРё.
+    /// mainFunction = "Р»Р°РїРєР°РїРѕРјРѕС‰Рё", "(", ")", block.
     /// </summary>
     private void ParseMainFunction()
     {
@@ -80,8 +87,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг объявления функции.
-    /// functionDeclaration = "лапка", identifier, "(", [ parameterList ], ")", [":", returnType ], block.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РѕР±СЉСЏРІР»РµРЅРёСЏ С„СѓРЅРєС†РёРё.
+    /// functionDeclaration = "Р»Р°РїРєР°", identifier, "(", [ parameterList ], ")", [":", returnType ], block.
     /// </summary>
     private void ParseFunctionDeclaration()
     {
@@ -133,7 +140,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг списка параметров.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ СЃРїРёСЃРєР° РїР°СЂР°РјРµС‚СЂРѕРІ.
     /// parameterList = parameter, { ",", parameter }.
     /// parameter = type, identifier.
     /// </summary>
@@ -167,8 +174,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг типа возврата (пропускаем токен типа).
-    /// returnType = "цыфорка" | "рилцыфорка" | "кринжли" | "ничего".
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ С‚РёРїР° РІРѕР·РІСЂР°С‚Р°.
+    /// returnType = "С†С‹С„РѕСЂРєР°" | "СЂРёР»С†С‹С„РѕСЂРєР°" | "РєСЂРёРЅР¶Р»Рё" | "РЅРёС‡РµРіРѕ".
     /// </summary>
     private void ParseReturnType()
     {
@@ -182,8 +189,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Пропускает токен типа.
-    /// type = "цыфорка" | "рилцыфорка" | "кринжли".
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ С‚РёРїР°.
+    /// type = "С†С‹С„РѕСЂРєР°" | "СЂРёР»С†С‹С„РѕСЂРєР°" | "РєСЂРёРЅР¶Р»Рё".
     /// </summary>
     private void SkipType()
     {
@@ -197,7 +204,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг блока.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ Р±Р»РѕРєР°.
     /// block = "{", { statement }, "}".
     /// </summary>
     private void ParseBlock()
@@ -218,7 +225,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Пропускает блок без выполнения.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ Р±Р»РѕРєР°.
     /// block = "{", { statement }, "}".
     /// </summary>
     private void SkipBlock()
@@ -241,7 +248,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг инструкции.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РёРЅСЃС‚СЂСѓРєС†РёРё.
     /// statement = commonStatement, instructionDelimiter.
     /// </summary>
     private void ParseStatement()
@@ -251,7 +258,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг общей инструкции.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РѕР±С‰РµР№ РёРЅСЃС‚СЂСѓРєС†РёРё.
     /// commonStatement = (variableDecl | constantDecl | assignment | inputStatement | outputStatement |
     ///                    ifStatement | whileStatement | doWhileStatement | forStatement |
     ///                    returnStatement | functionCall).
@@ -312,8 +319,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг объявления переменной.
-    /// variableDecl = "мур", type, identifier, [ "царапнуть", expression ].
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РѕР±СЉСЏРІР»РµРЅРёСЏ РїРµСЂРµРјРµРЅРЅРѕР№.
+    /// variableDecl = "РјСѓСЂ", type, identifier, [ "С†Р°СЂР°РїРЅСѓС‚СЊ", expression ].
     /// </summary>
     private void ParseVariableDecl()
     {
@@ -354,8 +361,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг объявления константы.
-    /// constantDecl = "строгиймур", type, identifier, "царапнуть", expression.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РѕР±СЉСЏРІР»РµРЅРёСЏ РєРѕРЅСЃС‚Р°РЅС‚С‹.
+    /// constantDecl = "СЃС‚СЂРѕРіРёР№РјСѓСЂ", type, identifier, "С†Р°СЂР°РїРЅСѓС‚СЊ", expression.
     /// </summary>
     private void ParseConstantDecl()
     {
@@ -386,8 +393,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг присваивания.
-    /// assignment = identifier, "царапнуть", expression.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ.
+    /// assignment = identifier, "С†Р°СЂР°РїРЅСѓС‚СЊ", expression.
     /// </summary>
     private void ParseAssignment(string varName)
     {
@@ -412,8 +419,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг инструкции ввода.
-    /// inputStatement = "клацать", "(", identifier, ")".
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РёРЅСЃС‚СЂСѓРєС†РёРё РІРІРѕРґР°.
+    /// inputStatement = "РєР»Р°С†Р°С‚СЊ", "(", identifier, ")".
     /// </summary>
     private void ParseInputStatement()
     {
@@ -439,8 +446,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг инструкции вывода.
-    /// outputStatement = "мурлыкать", "(", expression, { ",", expression }, ")".
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РёРЅСЃС‚СЂСѓРєС†РёРё РІС‹РІРѕРґР°.
+    /// outputStatement = "РјСѓСЂР»С‹РєР°С‚СЊ", "(", expression, { ",", expression }, ")".
     /// </summary>
     private void ParseOutputStatement()
     {
@@ -460,8 +467,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг условной инструкции.
-    /// ifStatement = "триппитроппа", "(", expression, ")", block, [ elseStatement ].
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РёРЅСЃС‚СЂСѓРєС†РёРё if.
+    /// ifStatement = "С‚СЂРёРїРїРёС‚СЂРѕРїРїР°", "(", expression, ")", block, [ elseStatement ].
     /// </summary>
     private void ParseIfStatement()
     {
@@ -493,8 +500,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг инструкции return.
-    /// returnStatement = "вернуть", [ expression ].
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РёРЅСЃС‚СЂСѓРєС†РёРё return.
+    /// returnStatement = "РІРµСЂРЅСѓС‚СЊ", [ expression ].
     /// </summary>
     private void ParseReturnStatement()
     {
@@ -506,7 +513,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг вызова функции.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РёРЅСЃС‚СЂСѓРєС†РёРё РІС‹Р·РѕРІР° С„СѓРЅРєС†РёРё.
     /// functionCall = identifier, "(", [ argumentList ], ")".
     /// argumentList = identifier, { ",", identifier }.
     /// </summary>
@@ -563,7 +570,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг выражения.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ.
     /// expression = logicalOr.
     /// </summary>
     private double ParseExpr()
@@ -572,7 +579,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг выражения или.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ Р»РѕРіРёС‡РµСЃРєРѕРіРѕ РёР»Рё.
     /// logicalOr = logicalAnd, { "||", logicalAnd }.
     /// </summary>
     private double ParseOrExpr()
@@ -589,7 +596,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг выражения и.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ Р»РѕРіРёС‡РµСЃРєРѕРіРѕ Рё.
     /// logicalAnd = comparison, { "&&", comparison }.
     /// </summary>
     private double ParseAndExpr()
@@ -606,7 +613,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг сравнения.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ СЃСЂР°РІРЅРµРЅРёСЏ.
     /// comparison = additive, [ ( ">" | ">=" | "<" | "<=" | "==" | "!=" ), additive ].
     /// </summary>
     private double ParseComparisonExpr()
@@ -622,13 +629,13 @@ public class Parser(Context context, IEnvironment environment, string code)
 
         return op switch
         {
-        TokenType.LessThan => (leftValue < rightValue) ? 1 : 0,
-        TokenType.MoreThan => (leftValue > rightValue) ? 1 : 0,
-        TokenType.NonStrictLess => (leftValue <= rightValue) ? 1 : 0,
-        TokenType.NonStrictMore => (leftValue >= rightValue) ? 1 : 0,
-        TokenType.EqualSign => (leftValue == rightValue) ? 1 : 0,
-        TokenType.UnequalSign => (leftValue != rightValue) ? 1 : 0,
-        _ => throw new InvalidOperationException("Unknown comparison operator"),
+            TokenType.LessThan => (leftValue < rightValue) ? 1 : 0,
+            TokenType.MoreThan => (leftValue > rightValue) ? 1 : 0,
+            TokenType.NonStrictLess => (leftValue <= rightValue) ? 1 : 0,
+            TokenType.NonStrictMore => (leftValue >= rightValue) ? 1 : 0,
+            TokenType.EqualSign => (leftValue == rightValue) ? 1 : 0,
+            TokenType.UnequalSign => (leftValue != rightValue) ? 1 : 0,
+            _ => throw new InvalidOperationException("Unknown comparison operator"),
         };
     }
 
@@ -636,7 +643,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг сложения/вычитания.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ СЃР»РѕР¶РµРЅРёСЏ/РІС‹С‡РёС‚Р°РЅРёСЏ.
     /// additive = multiplicative, { ( "+" | "-" ), multiplicative }.
     /// </summary>
     private double ParseAdditiveExpr()
@@ -662,7 +669,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг умножения/деления/остатка.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ СѓРјРЅРѕР¶РµРЅРёСЏ/РґРµР»РµРЅРёСЏ/РѕСЃС‚Р°С‚РєР° РѕС‚ РґРµР»РµРЅРёСЏ.
     /// multiplicative = unary, { ( "*" | "/" | "%" ), unary }.
     /// </summary>
     private double ParseMultiplicativeExpr()
@@ -709,9 +716,9 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг унарного выражения.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ СѓРЅР°СЂРЅРѕРіРѕ РѕРїРµСЂР°С‚РѕСЂР°.
     /// unary = [ "!" ], [ "+" | "-" ], power.
-    /// Унарный минус применяется ПОСЛЕ возведения в степень для правильного приоритета.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ СѓРЅР°СЂРЅРѕРіРѕ РѕРїРµСЂР°С‚РѕСЂР°.
     /// </summary>
     private double ParseUnaryExpr()
     {
@@ -738,9 +745,9 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг возведения в степень.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ РІРѕР·РІРµРґРµРЅРёСЏ РІ СЃС‚РµРїРµРЅСЊ.
     /// power = primary, [ "^", unary ].
-    /// Правая часть должна парситься через unary, чтобы правильно обработать унарный минус.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ РІРѕР·РІРµРґРµРЅРёСЏ РІ СЃС‚РµРїРµРЅСЊ.
     /// </summary>
     private double ParsePowerExpr()
     {
@@ -756,7 +763,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг основного выражения.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ РїРµСЂРІРёС‡РЅРѕРіРѕ РѕРїРµСЂР°С‚РѕСЂР°.
     /// primary = number | constant | boolean | identifierOrCall | "(", expression, ")".
     /// </summary>
     private double ParsePrimaryExpr()
@@ -818,7 +825,7 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг литерала числа.
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ Р»РёС‚РµСЂР°Р»Р°.
     /// </summary>
     private double ParseLiteral()
     {
@@ -834,8 +841,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг логического значения.
-    /// boolean = "кринж" | "некринж".
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ Р±СѓР»РµРІРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ.
+    /// boolean = "РєСЂРёРЅР¶" | "РЅРµРєСЂРёРЅР¶".
     /// </summary>
     private double ParseBool()
     {
@@ -850,8 +857,8 @@ public class Parser(Context context, IEnvironment environment, string code)
     }
 
     /// <summary>
-    /// Парсинг констант.
-    /// constant = "пи" | "эклер".
+    /// Р’С‹РїРѕР»РЅСЏРµС‚ СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРёР№ СЂР°Р·Р±РѕСЂ РІС‹СЂР°Р¶РµРЅРёСЏ РєРѕРЅСЃС‚Р°РЅС‚С‹.
+    /// constant = "РїРё" | "СЌРєР»РµСЂ".
     /// </summary>
     private double ParseConstant()
     {

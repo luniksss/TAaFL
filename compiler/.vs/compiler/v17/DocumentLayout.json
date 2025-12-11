@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\gitrepos\\TAaFL\\compiler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\parser.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|solutionrelative:parser.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{E1F2A3B4-C5D6-4E7F-8A9B-0C1D2E3F4A5B}|tests\\Interpreter.Specs\\Interpreter.Specs.csproj|d:\\gitrepos\\taafl\\compiler\\tests\\interpreter.specs\\interpreterspecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F2A3B4-C5D6-4E7F-8A9B-0C1D2E3F4A5B}|tests\\Interpreter.Specs\\Interpreter.Specs.csproj|solutionrelative:tests\\interpreter.specs\\interpreterspecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\parser.unittests\\parsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +15,36 @@
       "RelativeMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|solutionrelative:lexer.unittests\\lexertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\parser.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{80E86DE2-9B1F-4C12-9108-84F6199820C5}|Parser.UnitTests\\Parser.UnitTests.csproj|solutionrelative:parser.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|d:\\gitrepos\\taafl\\compiler\\parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1A2B3C4-D5E6-4F7A-8B9C-0D1E2F3A4B5C}|Interpreter\\Interpreter.csproj|d:\\gitrepos\\taafl\\compiler\\interpreter\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1A2B3C4-D5E6-4F7A-8B9C-0D1E2F3A4B5C}|Interpreter\\Interpreter.csproj|solutionrelative:interpreter\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|d:\\gitrepos\\taafl\\compiler\\execution\\ienvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|solutionrelative:execution\\ienvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|d:\\gitrepos\\taafl\\compiler\\execution\\consoleenvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|solutionrelative:execution\\consoleenvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|d:\\gitrepos\\taafl\\compiler\\execution\\fakeenvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|solutionrelative:execution\\fakeenvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|d:\\gitrepos\\taafl\\compiler\\parser\\unexpectedlexemeexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\unexpectedlexemeexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|d:\\gitrepos\\taafl\\compiler\\parser\\tokenstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\tokenstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|d:\\gitrepos\\taafl\\compiler\\parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E208E76-6DB5-4508-9A81-D218BBE6058D}|Parser\\Parser.csproj|solutionrelative:parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF232989-3B44-4307-8A22-DE9EE782BA0C}|Lexer\\Lexer.csproj|d:\\gitrepos\\taafl\\compiler\\lexer\\tokenvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,16 +79,8 @@
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|solutionrelative:execution\\scope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|d:\\gitrepos\\taafl\\compiler\\execution\\ienvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|solutionrelative:execution\\ienvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|d:\\gitrepos\\taafl\\compiler\\execution\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|solutionrelative:execution\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|d:\\gitrepos\\taafl\\compiler\\execution\\consoleenvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|Execution\\Execution.csproj|solutionrelative:execution\\consoleenvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1ED23A4-3D6D-4FDE-A07C-0CE0287F978D}|Lexer.UnitTests\\Lexer.UnitTests.csproj|d:\\gitrepos\\taafl\\compiler\\lexer.unittests\\testlists.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -90,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 43,
+          "SelectedChildIndex": 33,
           "Children": [
             {
               "$type": "Bookmark",
@@ -226,46 +238,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TokenStream.cs",
-              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\TokenStream.cs",
-              "RelativeDocumentMoniker": "Parser\\TokenStream.cs",
-              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\TokenStream.cs",
-              "RelativeToolTip": "Parser\\TokenStream.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "InterpreterSpecs.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\tests\\Interpreter.Specs\\InterpreterSpecs.cs",
+              "RelativeDocumentMoniker": "tests\\Interpreter.Specs\\InterpreterSpecs.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\tests\\Interpreter.Specs\\InterpreterSpecs.cs",
+              "RelativeToolTip": "tests\\Interpreter.Specs\\InterpreterSpecs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T15:31:07.8Z",
+              "WhenOpened": "2025-12-11T03:04:35.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Token.cs",
-              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Token.cs",
-              "RelativeDocumentMoniker": "Lexer\\Token.cs",
-              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Token.cs",
-              "RelativeToolTip": "Lexer\\Token.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAALAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Interpreter.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Interpreter\\Interpreter.cs",
+              "RelativeDocumentMoniker": "Interpreter\\Interpreter.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Interpreter\\Interpreter.cs",
+              "RelativeToolTip": "Interpreter\\Interpreter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T15:30:59.25Z",
+              "WhenOpened": "2025-12-11T02:45:34.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TextScanner.cs",
-              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TextScanner.cs",
-              "RelativeDocumentMoniker": "Lexer\\TextScanner.cs",
-              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TextScanner.cs",
-              "RelativeToolTip": "Lexer\\TextScanner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T15:30:57.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "LexicalStats.cs",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\LexicalStats.cs",
               "RelativeDocumentMoniker": "Lexer\\LexicalStats.cs",
@@ -273,12 +272,11 @@
               "RelativeToolTip": "Lexer\\LexicalStats.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T15:30:54.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T15:30:54.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Lexer.cs",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Lexer.cs",
               "RelativeDocumentMoniker": "Lexer\\Lexer.cs",
@@ -286,12 +284,11 @@
               "RelativeToolTip": "Lexer\\Lexer.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAUwJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T20:37:08.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T20:37:08.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "LexicalReport.cs",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\LexicalReport.cs",
               "RelativeDocumentMoniker": "Lexer\\LexicalReport.cs",
@@ -299,12 +296,11 @@
               "RelativeToolTip": "Lexer\\LexicalReport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T15:30:52.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T15:30:52.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "TokenType.cs",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TokenType.cs",
               "RelativeDocumentMoniker": "Lexer\\TokenType.cs",
@@ -312,12 +308,11 @@
               "RelativeToolTip": "Lexer\\TokenType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAMgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T14:49:48.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T14:49:48.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "TokenValue.cs",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TokenValue.cs",
               "RelativeDocumentMoniker": "Lexer\\TokenValue.cs",
@@ -325,25 +320,24 @@
               "RelativeToolTip": "Lexer\\TokenValue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T15:31:04.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T15:31:04.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Parser.cs",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\Parser.cs",
               "RelativeDocumentMoniker": "Parser\\Parser.cs",
               "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\Parser.cs",
               "RelativeToolTip": "Parser\\Parser.cs",
-              "ViewState": "AgIAACMDAAAAAAAAAAAcwGIDAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T15:29:39.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "UnexpectedLexemeException.cs",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\UnexpectedLexemeException.cs",
               "RelativeDocumentMoniker": "Parser\\UnexpectedLexemeException.cs",
@@ -351,12 +345,11 @@
               "RelativeToolTip": "Parser\\UnexpectedLexemeException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T15:31:09.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T15:31:09.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TESTLISTS.md",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser.UnitTests\\TESTLISTS.md",
               "RelativeDocumentMoniker": "Parser.UnitTests\\TESTLISTS.md",
@@ -388,53 +381,26 @@
               "RelativeDocumentMoniker": "Lexer.UnitTests\\LexerTests.cs",
               "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\LexerTests.cs",
               "RelativeToolTip": "Lexer.UnitTests\\LexerTests.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwEoAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowDkAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T13:53:38.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Scope.cs",
-              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\Scope.cs",
-              "RelativeDocumentMoniker": "Execution\\Scope.cs",
-              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\Scope.cs",
-              "RelativeToolTip": "Execution\\Scope.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAKQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "FakeEnvironment.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\FakeEnvironment.cs",
+              "RelativeDocumentMoniker": "Execution\\FakeEnvironment.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\FakeEnvironment.cs",
+              "RelativeToolTip": "Execution\\FakeEnvironment.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T02:08:57.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T02:44:50.243Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IEnvironment.cs",
-              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\IEnvironment.cs",
-              "RelativeDocumentMoniker": "Execution\\IEnvironment.cs",
-              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\IEnvironment.cs",
-              "RelativeToolTip": "Execution\\IEnvironment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T02:13:27.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Context.cs",
-              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\Context.cs",
-              "RelativeDocumentMoniker": "Execution\\Context.cs",
-              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\Context.cs",
-              "RelativeToolTip": "Execution\\Context.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T02:19:09.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "ConsoleEnvironment.cs",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\ConsoleEnvironment.cs",
               "RelativeDocumentMoniker": "Execution\\ConsoleEnvironment.cs",
@@ -442,12 +408,83 @@
               "RelativeToolTip": "Execution\\ConsoleEnvironment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T02:17:23.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T02:17:23.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
+              "Title": "IEnvironment.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\IEnvironment.cs",
+              "RelativeDocumentMoniker": "Execution\\IEnvironment.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\IEnvironment.cs",
+              "RelativeToolTip": "Execution\\IEnvironment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:13:27.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TextScanner.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TextScanner.cs",
+              "RelativeDocumentMoniker": "Lexer\\TextScanner.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\TextScanner.cs",
+              "RelativeToolTip": "Lexer\\TextScanner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T15:30:57.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Token.cs",
+              "RelativeDocumentMoniker": "Lexer\\Token.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Lexer\\Token.cs",
+              "RelativeToolTip": "Lexer\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T15:30:59.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TokenStream.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\TokenStream.cs",
+              "RelativeDocumentMoniker": "Parser\\TokenStream.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\TokenStream.cs",
+              "RelativeToolTip": "Parser\\TokenStream.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T15:31:07.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Scope.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\Scope.cs",
+              "RelativeDocumentMoniker": "Execution\\Scope.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\Scope.cs",
+              "RelativeToolTip": "Execution\\Scope.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:08:57.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Context.cs",
+              "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\Context.cs",
+              "RelativeDocumentMoniker": "Execution\\Context.cs",
+              "ToolTip": "D:\\gitrepos\\TAaFL\\compiler\\Execution\\Context.cs",
+              "RelativeToolTip": "Execution\\Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:19:09.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "TESTLISTS.md",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\TESTLISTS.md",
               "RelativeDocumentMoniker": "Lexer.UnitTests\\TESTLISTS.md",
@@ -455,12 +492,11 @@
               "RelativeToolTip": "Lexer.UnitTests\\TESTLISTS.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-26T14:02:45.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T14:02:45.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Parser.csproj",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Parser\\Parser.csproj",
               "RelativeDocumentMoniker": "Parser\\Parser.csproj",
@@ -472,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Lexer.UnitTests.csproj",
               "DocumentMoniker": "D:\\gitrepos\\TAaFL\\compiler\\Lexer.UnitTests\\Lexer.UnitTests.csproj",
               "RelativeDocumentMoniker": "Lexer.UnitTests\\Lexer.UnitTests.csproj",

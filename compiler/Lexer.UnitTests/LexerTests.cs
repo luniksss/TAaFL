@@ -21,7 +21,6 @@ public class LexerTests
     [MemberData(nameof(GetTokenizeStrLiteralData))]
     public void CanCorrectTokenizeLexemes(string text, List<Token> expected)
     {
-
         List<Token> actual = Tokenize(text, _output);
         Assert.Equal(expected, actual);
     }
@@ -46,17 +45,17 @@ public class LexerTests
             },
             {
                 "0", [
-                    new Token(TokenType.NumericLiteral, new TokenValue(0)) 
+                    new Token(TokenType.NumericLiteral, new TokenValue(0))
                     ]
             },
             {
                 "3.14", [
-                    new Token(TokenType.NumericLiteral, new TokenValue(3.14)) 
+                    new Token(TokenType.NumericLiteral, new TokenValue(3.14))
                     ]
             },
             {
                 "0.0", [
-                    new Token(TokenType.NumericLiteral, new TokenValue(0.0)) 
+                    new Token(TokenType.NumericLiteral, new TokenValue(0.0))
                     ]
             },
             {
